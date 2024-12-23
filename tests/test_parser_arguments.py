@@ -27,3 +27,20 @@ def test_parse_three_arguments(parser):
     assert isinstance(list_args["q"], parser.schema["q"])
     assert isinstance(list_args["r"], parser.schema["r"])
 
+def test_default_bool_value(parser):
+    list_args = parser.parse("-p value -r 1")
+    assert isinstance(list_args["q"], parser.schema["q"])
+    assert list_args["q"] is False
+
+def test_default_int_value(parser):
+    list_args = parser.parse("-p value -q")
+    assert isinstance(list_args["r"], parser.schema["r"])
+    assert list_args["r"] == 0
+
+def test_default_str_value(parser):
+    list_args = parser.parse("-q -r 1")
+    assert isinstance(list_args["p"], parser.schema["p"])
+    assert list_args["p"] == ""
+
+
+
