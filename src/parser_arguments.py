@@ -1,7 +1,8 @@
+from dataclasses import dataclass
 
+@dataclass
 class ParserArguments:
-    def __init__(self, schema: dict):
-        self.schema = schema
+    schema: dict
 
     def parse(self, args: str) -> dict:
         args_parsed = {}
