@@ -5,13 +5,14 @@ class ParserArguments:
 
     def parse(self, args: str) -> dict:
         args_parsed = {}
-        args = args.split("-")
+        args = args.strip().split("-")
         for arg in args:
             if arg == '':
                 continue
-            if len(arg) > 0:
-                key, value = arg.split(" ")
-                args_parsed[key] = value
-            else: 
+            if len(arg) == 1:
                 args_parsed[arg] = True
+            else: 
+                key, value = arg.strip().split(" ")
+                args_parsed[key] = value
+                
         return args_parsed
