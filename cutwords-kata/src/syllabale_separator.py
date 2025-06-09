@@ -28,9 +28,9 @@ class SyllableSeparator:
             i += 3
         else:
             if len(word)-i < i + 3:
-            if word[i + 3] not in vowels:
-                syllables.append(word[i:i+3])
-                i += 3
+                if word[i + 3] not in vowels:
+                    syllables.append(word[i:i+3])
+                    i += 3
             else:
                 syllables.append(word[i:i+2])
                 i += 2
