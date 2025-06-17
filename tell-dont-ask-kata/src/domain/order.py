@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 
-from .order_item import OrderItem
-from .order_status import OrderStatus
+from src.domain.order_item import OrderItem
+from src.domain.order_status import OrderStatus
 
 
 @dataclass

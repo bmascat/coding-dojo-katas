@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from .category import Category
+from src.domain.category import Category
 
 
 @dataclass

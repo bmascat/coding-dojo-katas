@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from .sell_item_request import SellItemRequest
+from src.use_case.sell_item_request import SellItemRequest
 
 
 @dataclass

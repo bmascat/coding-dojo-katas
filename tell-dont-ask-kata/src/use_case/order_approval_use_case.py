@@ -1,8 +1,8 @@
-from ..domain.order_status import OrderStatus
-from ..repository.order_repository import OrderRepository
-from .exceptions import ShippedOrdersCannotBeChangedException, \
+from src.domain.order_status import OrderStatus
+from src.repository.order_repository import OrderRepository
+from src.use_case.exceptions import ShippedOrdersCannotBeChangedException, \
     RejectedOrderCannotBeApprovedException, ApprovedOrderCannotBeRejectedException
-from .order_approval_request import OrderApprovalRequest
+from src.use_case.order_approval_request import OrderApprovalRequest
 
 
 class OrderApprovalUseCase:

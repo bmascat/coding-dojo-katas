@@ -1,6 +1,6 @@
 from abc import abstractmethod, ABC
 
-from ..domain.order import Order
+from src.domain.order import Order
 
 
 class OrderRepository(ABC):

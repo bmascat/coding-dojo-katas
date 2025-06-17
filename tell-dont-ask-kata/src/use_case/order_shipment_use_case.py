@@ -1,8 +1,8 @@
-from .order_shipment_request import OrderShipmentRequest
-from ..domain.order_status import OrderStatus
-from ..repository.order_repository import OrderRepository
-from ..service.shipment_service import ShipmentService
-from .exceptions import OrderCannotBeShippedTwiceException, OrderCannotBeShippedException
+from src.domain.order_status import OrderStatus
+from src.repository.order_repository import OrderRepository
+from src.service.shipment_service import ShipmentService
+from src.use_case.exceptions import OrderCannotBeShippedTwiceException, OrderCannotBeShippedException
+from src.use_case.order_shipment_request import OrderShipmentRequest
 
 
 class OrderShipmentUseCase:
