@@ -10,6 +10,8 @@ The repository also includes a `requirements.txt` file at the root level, which 
 
 ## Katas list:
 
+- [tell-dont-ask-kata](./tell-dont-ask-kata/): 17/06/2025
+- [cutwords-kata](./cutwords-kata/): 03/05/2025
 - [calculator-kata](./calculator-kata): 25/02/2025
 - [cli-parser-kata](./cli-parser-kata): 17/12/2024
 

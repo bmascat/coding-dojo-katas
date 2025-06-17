@@ -1,28 +1,27 @@
-# tell don't ask kata
-A legacy refactor kata, focused on the violation of the [tell don't ask](https://martinfowler.com/bliki/TellDontAsk.html) principle and the [anemic domain model](https://martinfowler.com/bliki/AnemicDomainModel.html).
+# Tell, don't ask
 
-## Instructions
-Here you find a simple order flow application. It's able to create orders, do some calculation (totals and taxes), and manage them (approval/reject and shipment).
+[Original](https://github.com/racingDeveloper/tell-dont-ask-kata)
 
-The old development team did not find the time to build a proper domain model but instead preferred to use a procedural style, building this anemic domain model.
-Fortunately, they did at least take the time to write unit tests for the code.
+Un kata de refactorización de código heredado, centrado en la violación del principio Tell, don’t ask y el modelo de dominio anémico.
 
-Your new CTO, after many bugs caused by this application, asked you to refactor this code to make it more maintainable and reliable.
+## Instrucciones
 
-## What to focus on
-As the title of the kata says, of course, the tell don't ask principle.
-You should be able to remove all the setters moving the behavior into the domain objects.
+Aquí encontrarás una sencilla aplicación de flujo de pedidos. Es capaz de crear pedidos, hacer algunos cálculos (totales e impuestos) y gestionarlos (aprobación/rechazo y envío).
 
-But don't stop there.
+El antiguo equipo de desarrollo no encontró el tiempo para construir un modelo de dominio adecuado, sino que prefirió usar un estilo procedimental, construyendo este modelo de dominio anémico. Afortunadamente, al menos se tomaron el tiempo para escribir pruebas unitarias para el código.
 
-If you can remove some test cases because they don't make sense anymore (eg: you cannot compile the code to do the wrong thing) feel free to do it!
+Su nuevo CTO, después de muchos errores causados por esta aplicación, te pidió que refactorizaras este código para hacerlo más mantenible y confiable.
 
-## Contribute
-If you would like to contribute to this kata adding new cases or smells: please open a pull request!
+## En qué centrarse
 
-## Feedback
-Feedback is welcome!
+Como dice el título del ejercicio, por supuesto, el principio Tell, don’t ask. Deberías poder eliminar todos los setters que mueven el comportamiento en los objetos de dominio.
 
-How did you find the kata? Did you learn anything from it?
+Pero no te detengas ahí.
 
-Please contact me on twitter [@racingDeveloper](https://twitter.com/racingDeveloper) or use the GitHub repo wiki!
+Si puedes eliminar algunos casos de prueba porque ya no tienen sentido (por ejemplo: no puedes compilar el código), ¡no dudes en hacerlo!
+
+## Contribuir
+
+Si desea contribuir a este kata añadiendo nuevos casos o versiones: ¡abre un PR!
+
+@racingDeveloper
